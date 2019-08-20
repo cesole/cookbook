@@ -2,7 +2,7 @@
     background-image: url({{ url_for('static', filename='images/background.jpg') }});
 }
 
-nav {
+nav .nav-wrapper {
     position: relative;
     height: 100%;
     background-color: #bdcebe !important;
@@ -62,7 +62,7 @@ span.card-title {
 }
 
 .white {
-    background-color: #380f67 !important;
+    background-color: #bdcebe !important;
     color: white;
     text-align: center;
 }

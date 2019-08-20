@@ -10,7 +10,7 @@
 </div>
 
 <div class="row collection-container">
-    {% for meal in meals %} {% if meal.author_name == username %}
+    {% meal in meals %} {% if meal.author_name == username %}
      <!--Trying out a collection display-->
      
     <div class="my-recipe-colelction-item">
@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-    {% endif %} {% endfor %}
+     {% endfor %}
 </div>
 <div id="load-more-spice">
     <a id="loadMore" class="btn-small center #880e4f pink darken-4">Load More <i class="fas fa-plus fa-xs"></i></a>

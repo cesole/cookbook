@@ -12,6 +12,8 @@ from functools import update_wrapper
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config['SECRET_KEY'] = "cooking_book"
+
 
 mongo = PyMongo(app)
 
@@ -60,8 +62,7 @@ def register():
         existing_user = users.find_one({"username" : request.form['username']})
         if existing_user is None:
             users.insert({'username' : request.form['username'],
-                            'password' : request.form['pass'],
-                            'email' : request.form['email']
+                            'password' : request.form['pass']
             })
             session['username'] = request.form['username']
             return redirect(url_for('index'))
@@ -74,7 +75,7 @@ def get_my_recipes():
     if not 'username' in session:
         return redirect('/get_login')
     else:
-        recipes = mongo.db.recipes.find()
+        recipes = mongo.db.meals.find()
         return render_template('user_recipes.html',
                            username=session['username'],
                            recipes=recipes)
@@ -85,7 +86,13 @@ def add_recipe():
                             categories=mongo.db.categories.find(),
                             images=mongo.db.images.find())
                             
-                            
+ 
+@app.route('/insert_recipe', methods=['POST'])
+def insert_recipe():
+    meals =  mongo.db.meals
+    meals.insert_one(request.form.to_dict())
+    return render_template('user_recipes.html')
+    
                             
 @app.route('/delete_recipe/<meal_id>')
 def delete_recipe(recipe_id):
@@ -93,12 +100,6 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('get_my_recipes'))
     
-                            
-@app.route('/insert_recipe', methods=['POST'])
-def insert_recipe():
-    meals =  mongo.db.meals
-    meals.insert_one(request.form.to_dict())
-    return redirect(url_for('index'))
     
 
 @app.route('/edit_recipe/<meal_id>')
