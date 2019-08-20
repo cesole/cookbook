@@ -10,16 +10,16 @@
 </div>
 
 <div class="row collection-container">
-    
+    {% for meal in meals %}
      <!--Trying out a collection display-->
      
     <div class="my-recipe-colelction-item">
         <ul class="collection">
             <li class="collection-item avatar" id="top-collection-item">
                 <img src="{{meal.image}}" alt="" class="circle">
-                <span id="my-recipe-name" class="title art-deco-font"><strong>{{meal.meal_name}}</strong></span>
-                <p id="my-recipe-description">{{meal.meal_description}}</p>
-                <span><strong>Meal Category:</strong> {{meal.meal_category}} </span>
+                <span id="my-recipe-name" class="title art-deco-font"><strong>{{meal.dish_name}}</strong></span>
+                <p id="my-recipe-description">{{meal.dish_description}}</p>
+                <span><strong>Meal Category:</strong> {{meal.category}} </span>
                 
             </li>
         </ul>
@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-     
+     {%endfor%}
 </div>
 <div id="load-more-spice">
     <a id="loadMore" class="btn-small center #880e4f pink darken-4">Load More <i class="fas fa-plus fa-xs"></i></a>

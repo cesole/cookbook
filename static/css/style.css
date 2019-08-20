@@ -121,6 +121,19 @@ label.active {
     color: #b9936c !important;
 }
 
+
+.fa-instagram:before {
+    display: none !important;
+}
+
+.fa-facebook-square:before{
+    display: none !important;
+}
+
+.fa-snapchat-square:before {
+    display: none !important;
+}
+
 /* MEDIA STYLE */
 
 @media (max-width: 768px) {

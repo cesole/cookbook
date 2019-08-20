@@ -10,7 +10,7 @@ from functools import update_wrapper
 
 
 app = Flask(__name__)
-app.config["MONGO_DBNAME"] = 'task_manager'
+app.config["MONGO_DBNAME"] = 'cook_book'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 app.config['SECRET_KEY'] = "cooking_book"
 
