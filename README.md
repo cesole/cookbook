@@ -52,10 +52,7 @@ Social Links - Provides users with links to the website social media pages and a
 - Manual Testing
 
 Add Recipe Page:
-Go to the "Add Recipe" page.
-Try to submit the empty form and verify that the recipe will not submit without a RECIPE NAME.
-Try to submit the form without description and verify that the recipe will not submit without a RECIPE DESCRIPTION.
-Try to submit the form without Vegan selected and verify that an error message appears.
+
 
 Eddit a Recipe
 when editing a recipe a new recipe will create instead of modifying the existing file.
