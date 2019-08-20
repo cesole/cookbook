@@ -81,13 +81,4 @@ Login to Heroku and select newly created app.
 Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
 From 'More' menu on the top right, select 'Restart all dynos'.
 View app: In settings, select Domain URL, NOT Git URL to view your hosted application.
-Deployed via Heroku: Daddy Does Dinner
-Please visit DEMO at https://cookbook-pierce.herokuapp.com/
 
-Credits
-Content
-The recipes came from the Easy Food website.
-Media
-The photos used in this site were obtained from Easy Food website.
-Acknowledgements
-I received inspiration for this project from Easy Food website.
