@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Aclonica|Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+
+    <title>Cookbook</title>
+</head>
+
+<body class="container-fluid">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="{{url_for('index')}}" class="brand-logo">Healthy Food</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                {% if session.username %}
+                <li>Hello, {{ session.username }}!</li>
+                {% endif %}
+                <li><a href="{{url_for('vegan')}}">Vegan</a></li>
+                <li><a href="{{url_for('vegetarian')}}">Vegetarian</a></li>
+                <li><a href="{{url_for('dessert')}}">Diary Free Dessert</a></li>
+                {% if not session.username %}
+                <li><a href="{{url_for('login')}}">Login</a></li>
+                <li><a href="{{url_for('register')}}">Register</a></li>
+                {% else %}
+                <li><a href="{{url_for('user_recipe')}}">My Recipes</a></li>
+                <li><a href="{{url_for('logout')}}">Logout</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            {% if session.username %}
+            <li>Hello, {{ session.username }}!</li>
+            {% endif %}
+            <li><a href="{{url_for('vegan')}}">Vegan</a></li>
+            <li><a href="{{url_for('vegetarian')}}">Vegetarian</a></li>
+            <li><a href="{{url_for('dessert')}}">Diary Free Dessert</a></li>
+            {% if not session.username %}
+            <li><a href="{{url_for('login')}}">Login</a></li>
+            <li><a href="{{url_for('register')}}">Register</a></li>
+            {% else %}
+            <li><a href="{{url_for('user_recipe')}}">My Recipes</a></li>
+            <li><a href="{{url_for('logout')}}">Logout</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    
+    <div class="container-fluid title-image">
+        {% block titleimage %}{% endblock %}
+    </div>
+    
+    <div class="container-fluid">
+        <main>{% block content %}{% endblock %}</main>
+    </div>
+    
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Healthy Food</h5>
+                    <p class="grey-text text-lighten-4">Thank You for time spend with us.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Visit us on :</h5>
+                    <ul>
+                      <li><i class="fas fa-facebook-square"></i><a class="orange-text text-lighten-3" href="https://www.facebook.com/" target=_blank>Facebook</a></li>
+                      <li><i class="fas fa-instagram"></i><a class="orange-text text-lighten-3" href="https://www.instagram.com/" target=_blank>Instagram</a></li>
+                      <li><i class="fas fa-snapchat-square"></i><a class="orange-text text-lighten-3" href="https://www.snapchat.com/" target=_blank>Snapchat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Cecilia Barriga - made with <a class="orange-text text-lighten-3" href="https://materializecss.com/" target=_blank>Materialize Css</a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.carousel').carousel();
+            $('.slider').slider();
+            $('select').formSelect();
+          });
+    </script>    
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+.parallax {
+    background-image: url({{ url_for('static', filename='images/background.jpg') }});
+}
+
+nav {
+    position: relative;
+    height: 100%;
+    background-color: #bdcebe !important;
+    color: white;
+}
+
+.index-container {
+    margin-left: 30px;
+    color: #d6cbd3;
+}
+
+.brand-logo {
+    font-family: 'Beth Ellen', cursive;
+    margin-left: 20px;
+}
+
+html {
+    font-family: 'Beth Ellen', cursive;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+main {
+    min-height: 50vh;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.meals {
+    padding-top: 50px;
+}
+
+span.card-title {
+    background-color: #d68d057a;
+    width: 100%;
+    padding: 10px !important;
+}
+
+.card-content {
+    height: 100px;
+}
+
+/* Caption styles */
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* parallax styles */
+.grey-text.text-darken-3 {
+    color: white !important;
+    text-align: center;
+}
+
+.white {
+    background-color: #380f67 !important;
+    color: white;
+    text-align: center;
+}
+
+/* end of style */
+
+/* carousel style */
+
+.carousel {
+    height: 250px;
+}
+
+/* end of styles */
+
+.input-field label {
+    color: black;
+}
+
+.input-field input[type=text],
+.input-field input[type=password],
+.input-field input[type=email]{
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.switch label {
+    color: black;
+}
+
+textarea.materialize-textarea {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+
+label.active {
+    color: yellow !important;
+}
+
+
+}
+.page-footer {
+    background-color: #bdcebe !important;
+}
+
+.title-image {
+    background-image: url('static/images/background.jpg');
+}
+
+.flashes {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.orange-text.text-lighten-3 {
+    color: #b9936c !important;
+}
+
+/* MEDIA STYLE */
+
+@media (max-width: 768px) {
+    nav .brand-logo {
+        font-size: 1rem;
+    }
+}
