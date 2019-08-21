@@ -98,8 +98,7 @@ def insert_recipe():
                             
 @app.route('/delete_recipe/<meal_id>')
 def delete_recipe(meal_id):
-   # mongo.db.meals.remove({'_id': ObjectId(meal_id)})
-    print (meal_id, "meals")
+    mongo.db.meals.remove({'_id': ObjectId(meal_id)})
     return redirect(url_for('get_my_recipes'))
     
     
@@ -108,10 +107,10 @@ def edit():
     return render_template('edit_recipe.html')
 
 @app.route('/edit_recipe/<meal_id>')
-def edit_meal(meal_id):
-    the_meal =  mongo.db.meal.find_one({"_id": ObjectId(meal_id)})
+def edit_recipe(meal_id):
+    meal =  mongo.db.meal.find_one({"_id": ObjectId(meal_id)})
     all_categories =  mongo.db.categories.find()
-    return render_template('edit_recipe.html', meal=the_meal,
+    return render_template('edit_recipe.html', meal=meal,
                            categories=all_categories)
     
 @app.route('/logout')

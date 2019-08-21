@@ -1,5 +1,5 @@
 .parallax {
-    background-image: url({{ url_for('static', filename='images/background.jpg') }});
+    background-image: url('static/images/background.jpg');
 }
 
 nav .nav-wrapper {
@@ -15,12 +15,12 @@ nav .nav-wrapper {
 }
 
 .brand-logo {
-    font-family: 'Beth Ellen', cursive;
+    font-family: 'Indie Flower', cursive;
     margin-left: 20px;
 }
 
 html {
-    font-family: 'Beth Ellen', cursive;
+    font-family: 'Indie Flower', cursive;
 }
 
 .description {
@@ -102,8 +102,9 @@ label.active {
 }
 
 
-}
 .page-footer {
+    padding-top: 20px;
+    color: #fff;
     background-color: #bdcebe !important;
 }
 
@@ -112,7 +113,7 @@ img.responsive-img {
     height: auto;
 }
     
-}
+
 .title-image {
     background-image: url('static/images/background.jpg');
 }
