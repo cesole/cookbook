@@ -73,12 +73,13 @@ def register():
 @app.route('/get_my_recipes', methods=['GET', 'POST'])
 def get_my_recipes():
     if not 'username' in session:
-        return redirect('/get_login')
+        return redirect('/login')
     else:
-        recipes = mongo.db.meals.find()
+        meals = mongo.db.meals.find()
+        users = mongo.db.users.find()
         return render_template('user_recipes.html',
                            username=session['username'],
-                           recipes=recipes)
+                        meals=meals)
     
 @app.route('/add_recipe')
 def add_recipe():
