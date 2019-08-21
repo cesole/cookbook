@@ -84,14 +84,16 @@ def get_my_recipes():
 def add_recipe():
     return render_template('add_recipe.html',
                             categories=mongo.db.categories.find(),
-                            images=mongo.db.images.find())
+                            meals=mongo.db.meals.find())
                             
  
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
     meals =  mongo.db.meals
     meals.insert_one(request.form.to_dict())
-    return render_template('user_recipes.html')
+    return render_template('user_recipes.html',
+    categories=mongo.db.categories.find(),
+                            meals=mongo.db.meals.find())
     
                             
 @app.route('/delete_recipe/<meal_id>')
