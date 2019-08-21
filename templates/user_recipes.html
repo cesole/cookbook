@@ -11,7 +11,7 @@
 
 <div class="row collection-container">
     {% for meal in meals %} 
-    {% if meal.author_name == users.username %}
+    {% if meal.author_name == user %}
     
 
      <!--Trying out a collection display-->
@@ -23,9 +23,6 @@
                 <img src="{{ meal.image }}">
                 <span class="card-title"><strong>{{ meal.dish_name }}</strong></span>
                 <a href="{{url_for('recipe', meal_id=meal._id)}}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
-            </div>
-            <div class="card-content">
-                <p>{{ meal.dish_description }}</p>
             </div>
         </div>
     </div>

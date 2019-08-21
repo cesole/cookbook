@@ -107,6 +107,12 @@ label.active {
     background-color: #bdcebe !important;
 }
 
+img.responsive-img {
+    max-width: 70%;
+    height: auto;
+}
+    
+}
 .title-image {
     background-image: url('static/images/background.jpg');
 }

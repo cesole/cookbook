@@ -76,7 +76,6 @@ def get_my_recipes():
         return redirect('/login')
     else:
         meals = mongo.db.meals.find()
-        users = mongo.db.users.find()
         return render_template('user_recipes.html',
                            username=session['username'],
                         meals=meals)
