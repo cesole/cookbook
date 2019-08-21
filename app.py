@@ -102,17 +102,43 @@ def delete_recipe(meal_id):
     return redirect(url_for('get_my_recipes'))
     
     
-@app.route('/edit')
-def edit():
-    return render_template('edit_recipe.html')
-
 @app.route('/edit_recipe/<meal_id>')
 def edit_recipe(meal_id):
-    meal =  mongo.db.meal.find_one({"_id": ObjectId(meal_id)})
+    the_meal =  mongo.db.meal.find_one({"_id": ObjectId(meal_id)})
     all_categories =  mongo.db.categories.find()
-    return render_template('edit_recipe.html', meal=meal,
+    return render_template('edit_recipe.html', meal=the_meal,
                            categories=all_categories)
-    
+
+
+@app.route('/update_recipe/<meal_id>', methods=["POST"])
+def update_recipe(meal_id):
+    meals = mongo.db.meals
+    meals.update( {'_id': ObjectId(meal_id)},
+    {
+        'dish_name':request.form.get('dish_name'),
+        'category_name':request.form.get('category_name'),
+        'dish_description': request.form.get('dish_description'),
+        'ingredient_one': request.form.get('ingredient_one'),
+        'ingredient_two': request.form.get('ingredient_two'),
+        'ingredient_three': request.form.get('ingredient_three'),
+        'ingredient_four': request.form.get('ingredient_four'),
+        'ingredient_five': request.form.get('ingredient_five'),
+        'ingredient_six': request.form.get('ingredient_six'),
+        'step_one': request.form.get('step_one'),
+        'step_two': request.form.get('step_two'),
+        'step_three': request.form.get('step_three'),
+        'step_four': request.form.get('step_four'),
+        'step_five': request.form.get('step_five'),
+        'step_six': request.form.get('step_six'),
+        'image': request.form.get('image'),
+        'cook_time': request.form.get('cook_time'),
+        'prep_time': request.form.get('prep_time'),
+        'author': request.form.get('author')
+    })
+    return redirect(url_for('get_my_recipes'))
+
+
+
 @app.route('/logout')
 def logout():
     session.clear()
