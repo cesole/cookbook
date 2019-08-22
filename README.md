@@ -4,37 +4,31 @@ In this case, I created a web application that allows users to store and easily 
 The backend code and frontend form(s) allows users to add new recipes to the site, edit them and delete them.
 User can also find recipes based on the type of meal: vegan, vegetarian, diary free desserts.
 
+
 **UX**
 This application is intended for use by all, but mainly people that enjoy healthy food. 
 
-**User Stories**
-
-I like healthy food, but easy to make
-As a stay at home dad with limited cooking skilled, I would love to find recipes that are simple and easy to cook for my family.
-As a student away from home for the first time, I am looking for somewhere to get easy recipes.
-
 
 **WireFrames**
-
 Below are the wireframes for the project.
 
 Index:
-![picture]({{ url_for('static', filename='images/index.png') }})
+
 
 For the 3 meals )vegan, vegetarian & dessert) I made the same wireframe:
-![picture]({{ url_for('static', filename='images/meal.png') }})
+
 
 Login and register are also the same:
-![picture]({{ url_for('static', filename='images/login.png') }})
+
 
 My Recipes:
-![picture]({{ url_for('static', filename='images/my_recipe.png') }})
+
 
 Recipe:
-![picture]({{ url_for('static', filename='meal/recipe.png') }})
+
 
 For add and edit recipe are also the same, with difference of the buttons:
-![picture]({{ url_for('static', filename='meal/add_recipe.png') }})
+
 
 
 
@@ -61,7 +55,7 @@ Social Links - Provides users with links to the website social media pages (Link
 
 **Technologies Used**
 - Cloud 9 IDE : This project used Cloud 9, an online integrated development environment, to construct the code end to end.
-- Bootstrap: This project used Bootstrap, a library of website themes. The Materialize CSS Parallax template, was used for this project.
+- Bootstrap: This project used Bootstrap, a library of website themes. The Materialize CSS template, was used for this project.
 - Flask: This project uses Flask, a Python micro-framework. It is classified as a microframework because it does not require particular tools or libraries.
 - MongoDB: This project uses mongoDB, a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata.
 - Jinga: This project uses Jinja, a template engine for Python, jinja code is included within the curly brackets.
@@ -76,16 +70,20 @@ Social Links - Provides users with links to the website social media pages (Link
 - Materialize CSS: Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform
 
 **Testing**
-- Manual Testing
+- Manual Testing: I retrieve a lot of issues while texting.
 
 Add Recipe Page:
+Go to the "Add Recipe" page.
+Try to submit the empty form and verify that the recipe will not submit without a DISH NAME.
+Try to submit the form without description and verify that the recipe will not submit without a DISH DESCRIPTION.
+Try to submit the form without Vegan selected and verify that an error message appears.
 
+Recipe page:
+Try to edit and Delete a recipe
 
-Eddit a Recipe
-when editing a recipe a new recipe will create instead of modifying the existing file.
+Once logged in, go to the My Recipes page and verify that is displaying the users recipes.
 
-Login
-Create a user and login
+In every meal page, make sure that the page is filtering correctly.
 
 
 - Responsive Testing
@@ -93,16 +91,29 @@ Create a user and login
 The app was tested on different devices and also using the Google Chrome inspect feature to test for repsonsiveness and any errors that occurred. 
 
 
+
 **Deployment**
 The following section describes the process to deploy this project to Heroku.
 
 Ensure all required technologies are installed locally, as per the requirements.txt file.
 Via Terminal, login to Heroku, using 'heroku login' command. 
-In Herok Heroku app, using 'heroku apps:create appname' command.
 Push project to Heroku, using 'push -u heroku master' command.
 Create scale, using 'heroku ps:scale web=1' command.
 Login to Heroku and select newly created app.
 Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
 From 'More' menu on the top right, select 'Restart all dynos'.
-View app: In settings, select Domain URL, NOT Git URL to view your hosted application.
+
+You can see it here:
+
+
+**Credits**
+I found several issues and I struggle with a few things:
+- I had to remove :rsv in the MONGO_URI as Heroku was failing
+- I had to constantly make sure that the data that I was passing in app.py and the data name in the template and in mongodb were consistent 
+
+
+**Credits**
+- Content: The recipes came from the Cookie and Kate website.
+- Media: The photos used in this site were obtained from Cookie and Kate website, and also from google.
+- Acknowledgements: Big thank you to the tutors Xavier and Haley for all your help and patience, as I have many things breaking and you were extra patiente with me.
 
