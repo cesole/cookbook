@@ -104,7 +104,7 @@ def delete_recipe(meal_id):
     
 @app.route('/edit_recipe/<meal_id>')
 def edit_recipe(meal_id):
-    the_meal =  mongo.db.meal.find_one({"_id": ObjectId(meal_id)})
+    the_meal =  mongo.db.meals.find_one({"_id": ObjectId(meal_id)})
     all_categories =  mongo.db.categories.find()
     return render_template('edit_recipe.html', meal=the_meal,
                            categories=all_categories)

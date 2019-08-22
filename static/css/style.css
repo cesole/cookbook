@@ -98,7 +98,8 @@ textarea.materialize-textarea {
 }
 
 label.active {
-    color: yellow !important;
+    color: #000000 !important;
+    font-size: 18px !important;
 }
 
 
@@ -129,17 +130,7 @@ img.responsive-img {
 }
 
 
-.fa-instagram:before {
-    display: none !important;
-}
 
-.fa-facebook-square:before{
-    display: none !important;
-}
-
-.fa-snapchat-square:before {
-    display: none !important;
-}
 
 /* MEDIA STYLE */
 

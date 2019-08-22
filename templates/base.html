@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}" type="text/css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
-    
+
 
     <title>Cookbook</title>
 </head>
@@ -56,7 +57,7 @@
     <div class="container-fluid">
         <main>{% block content %}{% endblock %}</main>
     </div>
-    
+
     <footer class="page-footer">
         <div class="container">
             <div class="row">
@@ -67,34 +68,35 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Visit us on :</h5>
                     <ul>
-                      <li><a class="social-media" href="https://www.facebook.com/" target=_blank>Facebook</a><i class="fa fa-facebook-square"></li>
-                      <li><a class="social-media" href="https://www.instagram.com/" target=_blank>Instagram</a><i class="fa fa-instagram"></li>
-                      <li><a class="social-media" href="https://www.snapchat.com/" target=_blank>Snapchat</a><i class="fa fa-snapchat-square"></i></li>
+                        <li><i class="fa fa-facebook-square"><a class="social-media" href="https://www.facebook.com/" target=_blank>Facebook</a></li>
+                        <li><i class="fa fa-instagram"><a class="social-media" href="https://www.instagram.com/" target=_blank>Instagram</a></li>
+                        <li><i class="fa fa-snapchat-square"><a class="social-media" href="https://www.snapchat.com/" target=_blank>Snapchat</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
                 <div class="row">
-            © 2019 Copyright Cecilia Barriga - made with <a class="orange-text text-lighten-3" href="https://materializecss.com/" target=_blank>Materialize Css</a>
-            </div>
+                    © 2019 Copyright Cecilia Barriga - made with <a class="orange-text text-lighten-3" href="https://materializecss.com/" target=_blank>Materialize Css</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('.sidenav').sidenav();
             $('.parallax').parallax();
             $('.carousel').carousel();
             $('.slider').slider();
             $('select').formSelect();
-          });
-    </script>    
-    
+        });
+    </script>
+
 </body>
+
 </html>
