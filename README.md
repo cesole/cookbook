@@ -13,22 +13,22 @@ This application is intended for use by all, but mainly people that enjoy health
 Below are the wireframes for the project.
 
 Index:
+![Index](https://user-images.githubusercontent.com/42648801/63551020-4bab4e80-c534-11e9-956f-4ab752959eae.png)
 
-
-For the 3 meals )vegan, vegetarian & dessert) I made the same wireframe:
-
+For the 3 meals (vegan, vegetarian & dessert) I made the same wireframe:
+![meal](https://user-images.githubusercontent.com/42648801/63551091-78f7fc80-c534-11e9-8853-2f7cb90215d0.png)
 
 Login and register are also the same:
-
+![login](https://user-images.githubusercontent.com/42648801/63551112-857c5500-c534-11e9-8d46-f9e7589e83c3.png)
 
 My Recipes:
-
+![My Recipe](https://user-images.githubusercontent.com/42648801/63551130-9200ad80-c534-11e9-9111-146c27ba3db6.png)
 
 Recipe:
-
+![recipe](https://user-images.githubusercontent.com/42648801/63551149-9fb63300-c534-11e9-8cd2-c5d571d62531.png)
 
 For add and edit recipe are also the same, with difference of the buttons:
-
+![add recipe](https://user-images.githubusercontent.com/42648801/63551160-a8a70480-c534-11e9-9762-23b7b49c514c.png)
 
 
 
