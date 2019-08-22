@@ -1,7 +1,13 @@
 #index {
-    background-image: url('static/images/background.jpg');
-    color: #d6cbd3;
+    color: #878f99;
     text-align: center;
+}
+
+#index h2 {
+    font-size: 3.56rem;
+    line-height: 110%;
+    margin: 0 !important;
+    padding-top: 50px;
 }
 
 nav .nav-wrapper {
@@ -13,7 +19,7 @@ nav .nav-wrapper {
 
 .index-container {
     margin-left: 30px;
-    color: #d6cbd3;
+    color: #878f99;
 }
 
 .brand-logo {
@@ -64,19 +70,18 @@ span.card-title {
     text-align: center;
 }
 
-.white {
-    color: #d6cbd3;
-    text-align: center;
+.font-grey {
+    color: #878f99;
 }
 
 .header {
-    color: #d6cbd3;
+    color: #878f99;
     text-align: center;
 }
 
 
 .brown-text {
-    color: #ada397 !important;
+    color: #bdaa93 !important;
 }
 
 
@@ -87,18 +92,29 @@ span.card-title {
 /* end of styles */
 
 .input-field label {
-    color: black;
+    color: #878f99 !important;
 }
 
-.input-field input[type=text],
-.input-field input[type=password],
-.input-field input[type=email]{
-    border-bottom: 1px solid black;
-    box-shadow: 0 1px 0 0 black;
+textarea.materialize-textarea {
+    border-bottom: 1px solid #878f99;
+    box-shadow: 0 1px 0 0 #878f99;
+}
+
+
+input[type=text]:not(.browser-default), textarea.materialize-textarea {
+    border-bottom: 1px solid #878f99;
+    font-size: 13px !important;
+}
+
+element.style {
+}
+.select-wrapper input.select-dropdown {
+    border-bottom: 1px solid #878f99;
+    font-size: 13px !important;
 }
 
 .switch label {
-    color: black;
+    color: #878f99;
 }
 
 textarea.materialize-textarea {
@@ -107,8 +123,8 @@ textarea.materialize-textarea {
 }
 
 label.active {
-    color: #000000 !important;
-    font-size: 18px !important;
+    color: #878f99 !important;
+    font-size: 14px !important;
 }
 
 
@@ -124,10 +140,6 @@ img.responsive-img {
 }
     
 
-.title-image {
-    background-image: url('static/images/background.jpg');
-}
-
 .flashes {
     text-align: center;
     font-size: 2rem;
@@ -135,11 +147,11 @@ img.responsive-img {
 
 
 .orange-text.text-lighten-3 {
-    color: #ada397 !important;
+    color: #bdaa93 !important;
 }
 
 .social-media {
-    color: #ada397;
+    color: #bdaa93;
     margin-left: 8px;
 }
 
@@ -150,4 +162,10 @@ img.responsive-img {
     nav .brand-logo {
         font-size: 1rem;
     }
+}
+
+@media only screen and (min-width: 992px) {
+html {
+    font-size: 13px;
+}
 }

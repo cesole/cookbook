@@ -55,7 +55,7 @@
     </nav>
 
     <div class="container-fluid">
-        <main>{% block content %}{% endblock %}</main>
+        <main style="background-image: url({{ url_for('static', filename='images/background2.jpg') }}); background-size: contain; ">{% block content %}{% endblock %}</main>
     </div>
 
     <footer class="page-footer">
