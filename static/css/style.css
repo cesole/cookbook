@@ -168,4 +168,8 @@ img.responsive-img {
 html {
     font-size: 13px;
 }
+
+#index {
+    min-height: 420px;
+}
 }
