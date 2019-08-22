@@ -1,4 +1,5 @@
-*healthy Food - Cookbook - Code Institute Milestone Project 3*
+***HEALTHY FOOD - Cookbook - Code Institute Milestone Project 3 ***
+
 In this project, I build a full-stack site that allows users to manage a common dataset about a particular domain.
 In this case, I created a web application that allows users to store and easily access cooking recipes with different fields ingredients, preparation steps, cooking time, preparation time, type of meal. 
 The backend code and frontend form(s) allows users to add new recipes to the site, edit them and delete them.
@@ -31,7 +32,6 @@ For add and edit recipe are also the same, with difference of the buttons:
 ![add recipe](https://user-images.githubusercontent.com/42648801/63551160-a8a70480-c534-11e9-9762-23b7b49c514c.png)
 
 
-
 **Layout**
 The layout used the Materialize CSS template which I modified to suit my own requirements.
 
@@ -50,7 +50,6 @@ Register: User can register in order to add recipes.
 Delete: User can delete recipe.
 Logout: logs our the user and redirect him to index page.
 Social Links - Provides users with links to the website social media pages (Links direct to social media pages for this project as this is not a real business and there are no"Healthy food" accounts).
-
 
 
 **Technologies Used**
@@ -91,7 +90,6 @@ In every meal page, make sure that the page is filtering correctly.
 The app was tested on different devices and also using the Google Chrome inspect feature to test for repsonsiveness and any errors that occurred. 
 
 
-
 **Deployment**
 The following section describes the process to deploy this project to Heroku.
 
@@ -103,7 +101,7 @@ Login to Heroku and select newly created app.
 Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
 From 'More' menu on the top right, select 'Restart all dynos'.
 
-You can see it here:
+You can see it here: [https://cook-book-ces.herokuapp.com/](url)
 
 
 **Credits**
