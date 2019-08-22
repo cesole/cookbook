@@ -1,34 +1,32 @@
 {% extends 'base.html'%} {% block content %}
-<div class="container add-recipe">
-<div class="row">
-    <div class="col s12 white center add-recipe-box">
-        <div class="icon-block">
-            <h2 class="center brown-text art-deco-font">Add a Recipe</h2>
-            <p class="light center">Click to open a form that will let you write your recipe and add it to your favourite recipe menu.</p>
-        </div>
-        <a href="/add_recipe" class="btn waves-effect waves-light">Add a Recipe</a>
-    </div>
-</div>
-
-<div class="row collection-container">
-    {% for meal in meals %} 
-    {% if meal.author == user %}
-    
-
-     <!--Trying out a collection display-->
-     
-<div class="my-recipe-colelction-item">
-    <div class="collection col s12 m4">
-        <div class="card">
-            <div class="card-image">
-                <img src="{{ meal.image }}">
-                <span class="card-title"><strong>{{ meal.dish_name }}</strong></span>
-                <a href="{{url_for('recipe', meal_id=meal._id)}}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
+<div class="container-fluid add-recipe">
+    <div class="row">
+        <div class="col s12 white center add-recipe-box">
+            <div class="icon-block">
+                <h3 class="center brown-text art-deco-font">Add a Recipe</h3>
+                <p class="light center">Click to open a form that will let you write your recipe and add it to your favourite recipe menu.</p>
             </div>
+            <a href="/add_recipe" class="btn waves-effect waves-light">Add a Recipe</a>
         </div>
     </div>
- {% endif %}{% endfor %}
-</div>
+
+    <div class="container back">
+        <div class="row meals">
+            {% for meal in meals %} {% if meal.author == user %}
+
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ meal.image }}">
+                        <span class="card-title"><strong>{{ meal.dish_name }}</strong></span>
+                        <a href="{{url_for('recipe', meal_id=meal._id)}}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info_outline</i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            {% endif %}{% endfor %}
+        </div>
+    </div>
 </div>
 {% endblock %}
-        

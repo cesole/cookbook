@@ -2,6 +2,9 @@
 {% block content %}
 <div class="container-fluid back">
     <div class="container">
+        <div class="row header">
+            <h4>Find here all Diary Free recipes</h4>
+        </div>
         <div class="row meals">
             {% for meal in meals %}
             {% if meal.category_name == "dessert" %}

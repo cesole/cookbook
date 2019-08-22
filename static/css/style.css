@@ -1,5 +1,7 @@
-.parallax {
+#index {
     background-image: url('static/images/background.jpg');
+    color: #d6cbd3;
+    text-align: center;
 }
 
 nav .nav-wrapper {
@@ -15,12 +17,13 @@ nav .nav-wrapper {
 }
 
 .brand-logo {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Londrina Outline', cursive;
+    font-weight: bold;
     margin-left: 20px;
 }
 
 html {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Livvic', sans-serif;
 }
 
 .description {
@@ -62,18 +65,24 @@ span.card-title {
 }
 
 .white {
-    background-color: #bdcebe !important;
-    color: white;
+    color: #d6cbd3;
     text-align: center;
 }
 
+.header {
+    color: #d6cbd3;
+    text-align: center;
+}
+
+
+.brown-text {
+    color: #ada397 !important;
+}
+
+
 /* end of style */
 
-/* carousel style */
 
-.carousel {
-    height: 250px;
-}
 
 /* end of styles */
 
@@ -126,10 +135,13 @@ img.responsive-img {
 
 
 .orange-text.text-lighten-3 {
-    color: #b9936c !important;
+    color: #ada397 !important;
 }
 
-
+.social-media {
+    color: #ada397;
+    margin-left: 8px;
+}
 
 
 /* MEDIA STYLE */
