@@ -17,18 +17,45 @@ As a student away from home for the first time, I am looking for somewhere to ge
 **WireFrames**
 
 Below are the wireframes for the project.
-First Idea:
+
+Index:
+![picture]({{ url_for('static', filename='images/index.png') }})
+
+For the 3 meals )vegan, vegetarian & dessert) I made the same wireframe:
+![picture]({{ url_for('static', filename='images/meal.png') }})
+
+Login and register are also the same:
+![picture]({{ url_for('static', filename='images/login.png') }})
+
+My Recipes:
+![picture]({{ url_for('static', filename='images/my_recipe.png') }})
+
+Recipe:
+![picture]({{ url_for('static', filename='meal/recipe.png') }})
+
+For add and edit recipe are also the same, with difference of the buttons:
+![picture]({{ url_for('static', filename='meal/add_recipe.png') }})
+
 
 
 **Layout**
-The layout used the Materialize CSS Parallax template which I modified to suit my own requirements.
+The layout used the Materialize CSS template which I modified to suit my own requirements.
+
 
 **Features**
 The following section describes the front-end features in this project.
 
-Navbar - Consists of the Healthy Foods logo which returns the user to the "Home" page of the application. There is also links to the "Vegan", "Vegetarian", "Dessert", "Add Recipe" "Login". The navbar will appear on all pages.
-Home - The home page consists of 4 sample recipes along with some information on contacting the webmaster and a link to the contact us page of the site.
-Social Links - Provides users with links to the website social media pages and also shortcuts to the "All Recipes" & "My Recipes" pages.(Links NOT LIVE current social media pages for this project as this is not a real business).
+Navbar - Consists of the Healthy Foods logo which returns the user to the "Home" page of the application. There is also links to the "Vegan", "Vegetarian", "Dessert", "Add Recipe" "Login", "Register", "My recipes" and "Logout". The navbar will appear on all pages.
+Home - The home page consists on welcoming the user to the page and explaining they can also add their own recipes.
+Vegan, Vegetarian & Diary Free Dessert - They feature each the filtered meal depending on its category.
+My Recipes - The user can see all the recipes that he/her has uploaded. Here also user can add a recipe.
+Add Recipe - User can select category, and write the dish name, dish description, image url, preparation ingredients, preparation steps, cooking time, preparation time and author.
+Edit recipe: User can edit the recipe previously added.
+Login: User can login with his/her credentials
+Register: User can register in order to add recipes.
+Delete: User can delete recipe.
+Logout: logs our the user and redirect him to index page.
+Social Links - Provides users with links to the website social media pages (Links direct to social media pages for this project as this is not a real business and there are no"Healthy food" accounts).
 
 
 
