@@ -1,4 +1,4 @@
-###HEALTHY FOOD - Cookbook - Code Institute Milestone Project 3 ###
+###**HEALTHY FOOD - Cookbook - Code Institute Milestone Project 3**
 
 In this project, I build a full-stack site that allows users to manage a common dataset about a particular domain.
 In this case, I created a web application that allows users to store and easily access cooking recipes with different fields ingredients, preparation steps, cooking time, preparation time, type of meal. 
