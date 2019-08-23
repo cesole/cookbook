@@ -39,17 +39,17 @@ The layout used the Materialize CSS template which I modified to suit my own req
 **Features**
 The following section describes the front-end features in this project.
 
-Navbar - Consists of the Healthy Foods logo which returns the user to the "Home" page of the application. There is also links to the "Vegan", "Vegetarian", "Dessert", "Add Recipe" "Login", "Register", "My recipes" and "Logout". The navbar will appear on all pages.
-Home - The home page consists on welcoming the user to the page and explaining they can also add their own recipes.
-Vegan, Vegetarian & Diary Free Dessert - They feature each the filtered meal depending on its category.
-My Recipes - The user can see all the recipes that he/her has uploaded. Here also user can add a recipe.
-Add Recipe - User can select category, and write the dish name, dish description, image url, preparation ingredients, preparation steps, cooking time, preparation time and author.
-Edit recipe: User can edit the recipe previously added.
-Login: User can login with his/her credentials
-Register: User can register in order to add recipes.
-Delete: User can delete recipe.
-Logout: logs our the user and redirect him to index page.
-Social Links - Provides users with links to the website social media pages (Links direct to social media pages for this project as this is not a real business and there are no"Healthy food" accounts).
+- Navbar - Consists of the Healthy Foods logo which returns the user to the "Home" page of the application. There is also links to the "Vegan", "Vegetarian", "Dessert", "Add Recipe" "Login", "Register", "My recipes" and "Logout". The navbar will appear on all pages.
+- Home - The home page consists on welcoming the user to the page and explaining they can also add their own recipes.
+- Vegan, Vegetarian & Diary Free Dessert - They feature each the filtered meal depending on its category.
+- My Recipes - The user can see all the recipes that he/her has uploaded. Here also user can add a recipe.
+- Add Recipe - User can select category, and write the dish name, dish description, image url, preparation ingredients, preparation steps, cooking time, preparation time and author.
+- Edit recipe: User can edit the recipe previously added.
+- Login: User can login with his/her credentials
+- Register: User can register in order to add recipes.
+- Delete: User can delete recipe.
+- Logout: logs our the user and redirect him to index page.
+- Social Links - Provides users with links to the website social media pages (Links direct to social media pages for this project as this is not a real business and there are no"Healthy food" accounts).
 
 
 **Technologies Used**
@@ -93,13 +93,13 @@ The app was tested on different devices and also using the Google Chrome inspect
 **Deployment**
 The following section describes the process to deploy this project to Heroku.
 
-Ensure all required technologies are installed locally, as per the requirements.txt file.
-Via Terminal, login to Heroku, using 'heroku login' command. 
-Push project to Heroku, using 'push -u heroku master' command.
-Create scale, using 'heroku ps:scale web=1' command.
-Login to Heroku and select newly created app.
-Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
-From 'More' menu on the top right, select 'Restart all dynos'.
+- Ensure all required technologies are installed locally, as per the requirements.txt file.
+- Via Terminal, login to Heroku, using 'heroku login' command. 
+- Push project to Heroku, using 'push -u heroku master' command.
+- Create scale, using 'heroku ps:scale web=1' command.
+- Login to Heroku and select newly created app.
+- Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
+- From 'More' menu on the top right, select 'Restart all dynos'.
 
 You can see it here: [https://cook-book-ces.herokuapp.com/](url)
 
