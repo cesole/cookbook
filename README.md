@@ -111,7 +111,7 @@ I found several issues and I struggle with a few things:
 - I had to constantly make sure that the data that I was passing in app.py and the data name in the template and in mongodb were consistent 
 
 
-## Credits
+## Acknowledegments
 - Content: The recipes came from the Cookie and Kate website.
 - Media: The photos used in this site were obtained from Cookie and Kate website, and also from google.
 - Acknowledgements: Big thank you to the tutors Xavier and Haley for all your help and patience, as I have many things breaking and you were extra patiente with me.
