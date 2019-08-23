@@ -1,4 +1,5 @@
-**HEALTHY FOOD - Cookbook - Code Institute Milestone Project 3**
+# HEALTHY FOOD - Cookbook - Code Institute Milestone Project 3
+Built by **_Cecilia Barriga_**
 
 In this project, I build a full-stack site that allows users to manage a common dataset about a particular domain.
 In this case, I created a web application that allows users to store and easily access cooking recipes with different fields ingredients, preparation steps, cooking time, preparation time, type of meal. 
@@ -6,11 +7,11 @@ The backend code and frontend form(s) allows users to add new recipes to the sit
 User can also find recipes based on the type of meal: vegan, vegetarian, diary free desserts.
 
 
-**UX**
+## UX
 This application is intended for use by all, but mainly people that enjoy healthy food. 
 
 
-**WireFrames**
+## WireFrames
 Below are the wireframes for the project.
 
 Index:
@@ -32,11 +33,11 @@ For add and edit recipe are also the same, with difference of the buttons:
 ![add recipe](https://user-images.githubusercontent.com/42648801/63551160-a8a70480-c534-11e9-9762-23b7b49c514c.png)
 
 
-**Layout**
+## Layout
 The layout used the Materialize CSS template which I modified to suit my own requirements.
 
 
-**Features**
+## Features
 The following section describes the front-end features in this project.
 
 - Navbar - Consists of the Healthy Foods logo which returns the user to the "Home" page of the application. There is also links to the "Vegan", "Vegetarian", "Dessert", "Add Recipe" "Login", "Register", "My recipes" and "Logout". The navbar will appear on all pages.
@@ -52,7 +53,7 @@ The following section describes the front-end features in this project.
 - Social Links - Provides users with links to the website social media pages (Links direct to social media pages for this project as this is not a real business and there are no"Healthy food" accounts).
 
 
-**Technologies Used**
+## Technologies Used
 - Cloud 9 IDE : This project used Cloud 9, an online integrated development environment, to construct the code end to end.
 - Bootstrap: This project used Bootstrap, a library of website themes. The Materialize CSS template, was used for this project.
 - Flask: This project uses Flask, a Python micro-framework. It is classified as a microframework because it does not require particular tools or libraries.
@@ -68,16 +69,16 @@ The following section describes the front-end features in this project.
 - Font Awesome: This project uses Font Awesome, vector icons and social logos on the website.
 - Materialize CSS: Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform
 
-**Testing**
+## Testing
 - Manual Testing: I retrieve a lot of issues while texting.
 
-Add Recipe Page:
+**Add Recipe Page:**
 Go to the "Add Recipe" page.
 Try to submit the empty form and verify that the recipe will not submit without a DISH NAME.
 Try to submit the form without description and verify that the recipe will not submit without a DISH DESCRIPTION.
 Try to submit the form without Vegan selected and verify that an error message appears.
 
-Recipe page:
+**Recipe page:**
 Try to edit and Delete a recipe
 
 Once logged in, go to the My Recipes page and verify that is displaying the users recipes.
@@ -90,7 +91,7 @@ In every meal page, make sure that the page is filtering correctly.
 The app was tested on different devices and also using the Google Chrome inspect feature to test for repsonsiveness and any errors that occurred. 
 
 
-**Deployment**
+## Deployment
 The following section describes the process to deploy this project to Heroku.
 
 - Ensure all required technologies are installed locally, as per the requirements.txt file.
@@ -104,13 +105,13 @@ The following section describes the process to deploy this project to Heroku.
 You can see it here: [https://cook-book-ces.herokuapp.com/](url)
 
 
-**Credits**
+## Credits
 I found several issues and I struggle with a few things:
 - I had to remove :rsv in the MONGO_URI as Heroku was failing
 - I had to constantly make sure that the data that I was passing in app.py and the data name in the template and in mongodb were consistent 
 
 
-**Credits**
+## Credits
 - Content: The recipes came from the Cookie and Kate website.
 - Media: The photos used in this site were obtained from Cookie and Kate website, and also from google.
 - Acknowledgements: Big thank you to the tutors Xavier and Haley for all your help and patience, as I have many things breaking and you were extra patiente with me.
