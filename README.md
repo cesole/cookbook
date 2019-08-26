@@ -107,7 +107,7 @@ You can see it here: [https://cook-book-ces.herokuapp.com/](url)
 
 ## Credits
 I found several issues and I struggle with a few things:
-- I had to remove :rsv in the MONGO_URI as Heroku was failing
+- I had to remove +rsv in the MONGO_URI as Heroku was failing, after that I was able to see just the Index page, but nothing more. So I had to add again the +rsv, and added the dnspython==1.16.0 to the requirement.txt file.
 - I had to constantly make sure that the data that I was passing in app.py and the data name in the template and in mongodb were consistent 
 
 
